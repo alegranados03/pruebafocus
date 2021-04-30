@@ -1,0 +1,11 @@
+.queue-list {
+  list-style-type: none;
+}
+
+.list-element {
+  padding: 1rem;
+  background-color: #c4c4c4;
+  margin-bottom: 0.5rem;
+  width: 65%;
+  border-radius: 20px;
+}

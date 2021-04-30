@@ -1,0 +1,67 @@
+.numberPad {
+  padding: 2rem;
+  background-color: #c4c4c4;
+  padding-bottom: 0;
+}
+
+.number-box {
+  width: 100%;
+  height: 100%;
+  place-self: stretch;
+  background: #ffffff;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.number-box > p {
+  margin-top: 0.9rem;
+}
+
+.pad-container {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+  grid-auto-rows: 4rem;
+  align-items: center;
+}
+
+.pad-container .number-box:last-child {
+  grid-column: 2/3;
+}
+
+.input-space {
+  margin-top: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.food-input {
+  height: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #88c2ec;
+}
+
+.food-input:focus-visible {
+  outline: 1px solid #5caae2;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  border-radius: 25px;
+  padding: 0.5rem;
+  color: white;
+}
+
+.red {
+  background-color: #ca4b4b;
+}
+.green {
+  background-color: #4bca7a;
+}

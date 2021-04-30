@@ -6,6 +6,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <div className="header">
+      <h1>Vending Machine Simulator</h1>
+    </div>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
