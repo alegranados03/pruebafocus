@@ -74,11 +74,11 @@ const VendingMachine = (): JSX.Element => {
       </div>
 
       <div className="section3">
-        <h1>Info</h1>
+        <h1 className="section-header">Info</h1>
         {queueState.length ? (
           <>
             {' '}
-            <h1>Queued Foods</h1>
+            <h1 className="section-header">Queued Foods</h1>
             <FoodQueue queue={queueState} />
           </>
         ) : (
@@ -87,23 +87,24 @@ const VendingMachine = (): JSX.Element => {
 
         {currentlyProcessing ? (
           <>
-            <h1>Currently processed</h1>
-            <Chronometer
-              food={currentlyProcessing}
-              onTimeUp={() => changeChronState()}
-              endTime={
-                new Date(
-                  new Date().getTime() +
-                    currentlyProcessing.cookMins * 60 * 1000
-                )
-              }
-            />
+            <h1 className="section-header">Currently processed</h1>
+
             <ul className="queue-list">
               <li
                 className="list-element"
                 style={{ backgroundColor: '#FAADAD' }}
               >
-                {currentlyProcessing.name}
+                <p>{currentlyProcessing.name}</p>
+                <Chronometer
+                  food={currentlyProcessing}
+                  onTimeUp={() => changeChronState()}
+                  endTime={
+                    new Date(
+                      new Date().getTime() +
+                        currentlyProcessing.cookMins * 60 * 1000
+                    )
+                  }
+                />
               </li>
             </ul>
           </>

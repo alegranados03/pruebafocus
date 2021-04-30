@@ -6,10 +6,13 @@
   justify-content: center;
   align-items: stretch;
   background-color: #43b4b0;
+  height: 100%;
+  border-radius: 1rem;
 }
 
 .section1 {
   padding: 1rem;
+  background-color: #FF8E33;
 }
 .section2 {
   padding: 2rem;
@@ -27,6 +30,8 @@
   background: #c4c4c4;
   padding-bottom: 0;
   height: 100%;
+  border-radius: 1rem 1rem 0 0;
+  font-size: 1.4rem;
 }
 
 .selected-food-picture {
@@ -40,4 +45,9 @@
 .section3 {
   background-color: #f1dede;
   width: 60%;
+  padding: 1rem;
+}
+
+.section-header{
+  margin-bottom:0.5rem;
 }

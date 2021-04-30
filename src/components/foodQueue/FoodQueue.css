@@ -1,11 +1,20 @@
 .queue-list {
   list-style-type: none;
+  margin-bottom:1.5rem;
 }
 
 .list-element {
   padding: 1rem;
   background-color: #c4c4c4;
   margin-bottom: 0.5rem;
-  width: 65%;
+  width: 80%;
   border-radius: 20px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.queue-total{
+  font-size:1.7rem;
+  margin-bottom:0.8rem;
 }

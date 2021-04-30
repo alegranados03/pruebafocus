@@ -22,7 +22,12 @@ const Food = ({ food, onClickAction }: IProps): JSX.Element => {
         <p>
           <strong>{food.name}</strong>
         </p>
-        <p>Preparation time: {food.cookMins} min</p>
+        <p>
+          Preparation time:{' '}
+          {food.cookMins < 1
+            ? `${food.cookMins*60} secs.`
+            : `${food.cookMins} min`}
+        </p>
         <p>Food Code: {food.id}</p>
       </div>
     </div>

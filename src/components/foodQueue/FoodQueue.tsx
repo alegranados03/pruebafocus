@@ -7,9 +7,14 @@ interface IProps {
 }
 const FoodQueue = ({ queue }: IProps): JSX.Element => {
   const reversed = [...queue].reverse();
+  const total = reversed.map((el) => el.cookMins).reduce((acc, el) => acc + el);
 
   return (
     <>
+      <p className="queue-total">
+        Total time to dispatch queue:{' '}
+        {total < 1 ? `${total} seconds.` : `${total} minutes`}
+      </p>
       {queue.length ? (
         <ul className="queue-list">
           {reversed.map((food) => {
@@ -22,7 +27,13 @@ const FoodQueue = ({ queue }: IProps): JSX.Element => {
                   food.id
                 }
               >
-                {food.name}
+                <p>{food.name}</p>
+                <p>
+                  Will be ready in:{' '}
+                  {food.cookMins < 1
+                    ? `${food.cookMins * 60} secs.`
+                    : `${food.cookMins} min`}
+                </p>
               </li>
             );
           })}

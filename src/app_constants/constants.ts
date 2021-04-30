@@ -5,14 +5,14 @@ export const FOODARRAY: IFood[] = [
     picture:
       'https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/master/pass/Smashburger-recipe-120219.jpg',
     name: 'Burger',
-    cookMins: 1,
+    cookMins: 0.5,
     id: 1,
   },
   {
     picture:
       'https://cdn.kiwilimon.com/recetaimagen/13003/th5-640x426-5707.jpg',
     name: 'Veggie Pizza',
-    cookMins: 1,
+    cookMins: 0.5,
     id: 2,
   },
   {
@@ -33,7 +33,7 @@ export const FOODARRAY: IFood[] = [
     picture:
       'https://hurrythefoodup.com/wp-content/uploads/2017/03/Tomato-Omelette-7-500x500.jpg',
     name: 'Tomato Omelette',
-    cookMins: 3,
+    cookMins: 0.5,
     id: 5,
   },
   {
