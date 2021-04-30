@@ -13,6 +13,11 @@
   clip-path: circle(50% at 50% 50%);
 }
 
+.number-box:hover {
+  background: #e2e2e2;
+  cursor: pointer;
+}
+
 .number-box > p {
   margin-top: 0.9rem;
 }
@@ -59,10 +64,25 @@
   padding: 0.5rem;
   color: white;
 }
+.button:hover {
+  cursor: pointer;
+}
 
 .red {
   background-color: #ca4b4b;
 }
+.red:hover {
+  background-color: #d43434;
+  -webkit-box-shadow: 0px -2px 19px 0px rgba(202, 75, 75, 1);
+  -moz-box-shadow: 0px -2px 19px 0px rgba(202, 75, 75, 1);
+  box-shadow: 0px -2px 19px 0px rgba(202, 75, 75, 1);
+}
 .green {
   background-color: #4bca7a;
+}
+.green:hover {
+  background-color: #44d177;
+  -webkit-box-shadow: 2px -2px 42px -4px rgba(68, 209, 119, 1);
+  -moz-box-shadow: 2px -2px 42px -4px rgba(68, 209, 119, 1);
+  box-shadow: 2px -2px 42px -4px rgba(68, 209, 119, 1);
 }
